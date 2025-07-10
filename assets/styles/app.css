@@ -1,0 +1,258 @@
+/* Import de la police Orbitron */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+/* Charte graphique Jordan */
+:root {
+    --jordan-black: #000000;
+    --jordan-red: #dc143c;
+    --jordan-white: #ffffff;
+    --jordan-dark-red: #b22222;
+}
+
+body {
+    background-color: var(--jordan-white);
+    font-family: "Arial", sans-serif;
+}
+
+/* Background noir pour le body sur les pages product et cart */
+body.product-cart-body {
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Police Orbitron pour les pages cart et product */
+.product-page,
+.cart-page {
+    font-family: "Orbitron", monospace;
+}
+
+.product-page h1,
+.product-page h2,
+.cart-page h1,
+.cart-page h2 {
+    font-family: "Orbitron", monospace;
+    font-weight: 700;
+}
+
+.product-page .card-title,
+.cart-page .card-title {
+    font-family: "Orbitron", monospace;
+    font-weight: 400;
+}
+
+/* Background noir pour les pages product et cart - pleine largeur et hauteur */
+.product-page,
+.cart-page {
+    background-color: #000000;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Container avec background noir et centrage */
+.product-page .container,
+.cart-page .container {
+    background-color: #000000;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+/* Centrage des titres */
+.product-page h1,
+.product-page h2,
+.cart-page h1,
+.cart-page h2 {
+    text-align: center !important;
+    width: 100%;
+    color: #ffffff !important;
+}
+
+/* Centrage des boutons de filtrage sans étirement */
+.product-page .btn-group,
+.cart-page .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* width retiré pour éviter l'étirement */
+}
+
+.product-page .btn-group .btn,
+.cart-page .btn-group .btn {
+    min-width: 120px;
+    margin: 0 4px;
+}
+
+/* Centrage des grilles de produits */
+.product-page .row,
+.cart-page .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    /* width retiré pour éviter l'étirement */
+}
+
+/* Titres en blanc sur background noir */
+.product-page h1,
+.product-page h2,
+.cart-page h1,
+.cart-page h2,
+.product-page h3,
+.cart-page h3,
+.product-page p,
+.cart-page p {
+    color: #ffffff !important;
+}
+
+/* Texte en blanc pour les éléments sur background noir */
+.product-page .text-muted,
+.cart-page .text-muted {
+    color: #cccccc !important;
+}
+
+/* Boutons de tri en blanc */
+.product-page .btn-outline-dark,
+.cart-page .btn-outline-dark {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.product-page .btn-outline-dark:hover,
+.cart-page .btn-outline-dark:hover {
+    background-color: var(--jordan-red) !important;
+    border-color: var(--jordan-red) !important;
+    color: #ffffff !important;
+}
+
+.product-page .btn-outline-dark.active,
+.cart-page .btn-outline-dark.active {
+    background-color: var(--jordan-red) !important;
+    border-color: var(--jordan-red) !important;
+    color: #ffffff !important;
+}
+
+/* Cards avec background blanc */
+.product-page .card,
+.cart-page .card {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.1);
+    width: 100%;
+}
+
+/* Bannières des cards en rouge */
+.product-page .card-header,
+.cart-page .card-header {
+    background-color: #dc143c !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+/* Texte blanc sur les backgrounds rouges et noirs */
+.product-page .card-header h5,
+.cart-page .card-header h5,
+.product-page .card-header .mb-0,
+.cart-page .card-header .mb-0 {
+    color: #ffffff !important;
+}
+
+/* Messages d'alerte avec fond noir */
+.product-page .alert,
+.cart-page .alert {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #dc143c;
+}
+
+.product-page .alert-danger,
+.cart-page .alert-danger {
+    background-color: #dc143c;
+    color: #ffffff;
+    border: 1px solid #dc143c;
+}
+
+.product-page .alert-success,
+.cart-page .alert-success {
+    background-color: #28a745;
+    color: #ffffff;
+    border: 1px solid #28a745;
+}
+
+/* Cards produits */
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid #dee2e6;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Boutons Jordan */
+.btn-outline-dark:hover {
+    background-color: var(--jordan-red);
+    border-color: var(--jordan-red);
+    color: var(--jordan-white);
+}
+
+.btn-danger {
+    background-color: var(--jordan-red);
+    border-color: var(--jordan-red);
+}
+
+.btn-danger:hover {
+    background-color: var(--jordan-dark-red);
+    border-color: var(--jordan-dark-red);
+}
+
+/* Navigation */
+.navbar-dark {
+    background-color: var(--jordan-black) !important;
+}
+
+.navbar-brand {
+    color: var(--jordan-red) !important;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--jordan-black);
+    color: var(--jordan-white);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Cartes avec ombre */
+.card.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Prix en rouge Jordan */
+.text-danger {
+    color: var(--jordan-red) !important;
+}
+
+/* Boutons de filtrage */
+.btn-group .btn-outline-dark.active {
+    background-color: var(--jordan-red);
+    border-color: var(--jordan-red);
+    color: var(--jordan-white);
+}
