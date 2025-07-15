@@ -54,14 +54,14 @@ final class CartController extends AbstractController
             }
         }
 
-        // Vérifier le stock restant
+        
         if ($product->getQuantity() <= 0) {
             $this->addFlash('error', 'Ce produit n\'est plus disponible.');
             return $this->redirectToRoute('app_product');
         }
 
         if ($existingCartItem) {
-            // On ne peut pas ajouter plus que le stock restant
+            
             if ($product->getQuantity() < 1) {
                 $this->addFlash('error', "Il n'y a plus de stock pour ce produit.");
                 return $this->redirectToRoute('app_product');
@@ -93,15 +93,15 @@ final class CartController extends AbstractController
         $currentQuantity = $cartItem->getQuantity();
 
         if ($quantity <= 0) {
-            // Remettre le stock si on supprime l'item
+            
             $product->setQuantity($product->getQuantity() + $currentQuantity);
             $entityManager->remove($cartItem);
         } else {
-            // Calculer la différence
+           
             $diff = $quantity - $currentQuantity;
 
             if ($diff > 0) {
-                // On veut augmenter la quantité
+                
                 if ($diff <= $product->getQuantity()) {
                     $cartItem->setQuantity($quantity);
                     $product->setQuantity($product->getQuantity() - $diff);
@@ -110,11 +110,11 @@ final class CartController extends AbstractController
                     return $this->redirectToRoute('app_cart');
                 }
             } elseif ($diff < 0) {
-                // On veut diminuer la quantité
+                
                 $cartItem->setQuantity($quantity);
                 $product->setQuantity($product->getQuantity() + abs($diff));
             }
-            // Si diff = 0, rien à faire
+            
         }
 
         $cartItem->getCart()->setUpdatedAt(new \DateTimeImmutable());

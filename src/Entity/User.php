@@ -114,12 +114,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function setCart(?Cart $cart): static
     {
-        // unset the owning side of the relation if necessary
+        
         if ($cart === null && $this->cart !== null) {
             $this->cart->setUser(null);
         }
 
-        // set the owning side of the relation if necessary
+        
         if ($cart !== null && $cart->getUser() !== $this) {
             $cart->setUser($this);
         }
@@ -143,6 +143,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[\Deprecated]
     public function eraseCredentials(): void
     {
-        // @deprecated, to be removed when upgrading to Symfony 8
+        
     }
 }
