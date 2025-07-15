@@ -1,7 +1,7 @@
-/* Import de la police Orbitron */
+
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
 
-/* Charte graphique Jordan */
+
 :root {
     --jordan-black: #000000;
     --jordan-red: #dc143c;
@@ -14,7 +14,7 @@ body {
     font-family: "Arial", sans-serif;
 }
 
-/* Background noir pour le body sur les pages product et cart */
+
 body.product-cart-body {
     background-color: #000000 !important;
     margin: 0;
@@ -22,7 +22,7 @@ body.product-cart-body {
     min-height: 100vh;
 }
 
-/* Police Orbitron pour les pages cart et product */
+
 .product-page,
 .cart-page {
     font-family: "Orbitron", monospace;
@@ -42,7 +42,7 @@ body.product-cart-body {
     font-weight: 400;
 }
 
-/* Background noir pour les pages product et cart - pleine largeur et hauteur */
+
 .product-page,
 .cart-page {
     background-color: #000000;
@@ -52,7 +52,7 @@ body.product-cart-body {
     padding: 20px 0;
 }
 
-/* Container avec background noir et centrage */
+
 .product-page .container,
 .cart-page .container {
     background-color: #000000;
@@ -62,7 +62,7 @@ body.product-cart-body {
     padding: 20px 15px;
 }
 
-/* Centrage des titres */
+
 .product-page h1,
 .product-page h2,
 .cart-page h1,
@@ -72,14 +72,14 @@ body.product-cart-body {
     color: #ffffff !important;
 }
 
-/* Centrage des boutons de filtrage sans étirement */
+
 .product-page .btn-group,
 .cart-page .btn-group {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* width retiré pour éviter l'étirement */
+
 }
 
 .product-page .btn-group .btn,
@@ -88,7 +88,7 @@ body.product-cart-body {
     margin: 0 4px;
 }
 
-/* Centrage des grilles de produits */
+
 .product-page .row,
 .cart-page .row {
     display: flex;
@@ -96,10 +96,10 @@ body.product-cart-body {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
-    /* width retiré pour éviter l'étirement */
+
 }
 
-/* Titres en blanc sur background noir */
+
 .product-page h1,
 .product-page h2,
 .cart-page h1,
@@ -111,13 +111,13 @@ body.product-cart-body {
     color: #ffffff !important;
 }
 
-/* Texte en blanc pour les éléments sur background noir */
+
 .product-page .text-muted,
 .cart-page .text-muted {
     color: #cccccc !important;
 }
 
-/* Boutons de tri en blanc */
+
 .product-page .btn-outline-dark,
 .cart-page .btn-outline-dark {
     color: #ffffff !important;
@@ -139,7 +139,7 @@ body.product-cart-body {
     color: #ffffff !important;
 }
 
-/* Cards avec background blanc */
+
 .product-page .card,
 .cart-page .card {
     background-color: #ffffff;
@@ -148,7 +148,7 @@ body.product-cart-body {
     width: 100%;
 }
 
-/* Bannières des cards en rouge */
+
 .product-page .card-header,
 .cart-page .card-header {
     background-color: #dc143c !important;
@@ -156,7 +156,7 @@ body.product-cart-body {
     border: none;
 }
 
-/* Texte blanc sur les backgrounds rouges et noirs */
+
 .product-page .card-header h5,
 .cart-page .card-header h5,
 .product-page .card-header .mb-0,
@@ -164,7 +164,7 @@ body.product-cart-body {
     color: #ffffff !important;
 }
 
-/* Messages d'alerte avec fond noir */
+
 .product-page .alert,
 .cart-page .alert {
     background-color: #000000;
@@ -186,7 +186,7 @@ body.product-cart-body {
     border: 1px solid #28a745;
 }
 
-/* Cards produits */
+
 .product-card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border: 1px solid #dee2e6;
@@ -205,7 +205,7 @@ body.product-cart-body {
     object-fit: cover;
 }
 
-/* Boutons Jordan */
+
 .btn-outline-dark:hover {
     background-color: var(--jordan-red);
     border-color: var(--jordan-red);
@@ -222,7 +222,7 @@ body.product-cart-body {
     border-color: var(--jordan-dark-red);
 }
 
-/* Navigation */
+
 .navbar-dark {
     background-color: var(--jordan-black) !important;
 }
@@ -232,7 +232,7 @@ body.product-cart-body {
     font-weight: bold;
 }
 
-/* Footer */
+
 .footer {
     background-color: var(--jordan-black);
     color: var(--jordan-white);
@@ -240,17 +240,125 @@ body.product-cart-body {
     margin-top: 3rem;
 }
 
-/* Cartes avec ombre */
+
 .card.shadow-sm {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Prix en rouge Jordan */
+
 .text-danger {
     color: var(--jordan-red) !important;
 }
 
-/* Boutons de filtrage */
+
+.registration-page {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.registration-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-top: 5px solid var(--jordan-red);
+}
+
+.registration-page h1 {
+    color: var(--jordan-black) !important;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.registration-page .form-group {
+    margin-bottom: 25px;
+}
+
+.registration-page .form-label {
+    font-weight: 600;
+    color: var(--jordan-black);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.registration-page .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.registration-page .form-control:focus {
+    border-color: var(--jordan-red);
+    box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.25);
+    outline: none;
+}
+
+.registration-page .form-check {
+    margin: 20px 0;
+}
+
+.registration-page .form-check-input:checked {
+    background-color: var(--jordan-red);
+    border-color: var(--jordan-red);
+}
+
+.registration-page .form-check-label {
+    color: var(--jordan-black);
+    font-weight: 500;
+}
+
+.registration-page .btn {
+    background-color: var(--jordan-red);
+    border-color: var(--jordan-red);
+    color: var(--jordan-white);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.registration-page .btn:hover {
+    background-color: var(--jordan-dark-red);
+    border-color: var(--jordan-dark-red);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+}
+
+.registration-page .alert {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.registration-page .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+
+@media (max-width: 768px) {
+    .registration-container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    
+    .registration-page h1 {
+        font-size: 2rem;
+    }
+}
+}
+
+
 .btn-group .btn-outline-dark.active {
     background-color: var(--jordan-red);
     border-color: var(--jordan-red);
