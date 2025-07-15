@@ -14,7 +14,7 @@ class AppFixtures extends Fixture
         $basketProducts = [
             [
                 'name' => 'Air Jordan 1 Retro High OG',
-                'model' => '555088-101',
+                'model' => 'azerty1',
                 'price' => 170.00,
                 'quantity' => 15,
                 'image' => 'jordan-1-retro-high-og-white-black-red.jpg',
@@ -22,7 +22,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Air Jordan 4 Retro',
-                'model' => '308497-060',
+                'model' => 'azerty2',
                 'price' => 200.00,
                 'quantity' => 12,
                 'image' => 'jordan-4-retro-black-cement.jpg',
@@ -30,7 +30,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Air Jordan 11 Retro',
-                'model' => '378037-123',
+                'model' => 'azerty3',
                 'price' => 220.00,
                 'quantity' => 8,
                 'image' => 'jordan-11-retro-concord.jpg',
@@ -38,7 +38,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Air Jordan 6 Retro',
-                'model' => '384664-060',
+                'model' => 'azerty4',
                 'price' => 190.00,
                 'quantity' => 10,
                 'image' => 'jordan-6-retro-black-infrared.jpg',
@@ -46,7 +46,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Air Jordan 12 Retro',
-                'model' => '130690-123',
+                'model' => 'azerty5',
                 'price' => 210.00,
                 'quantity' => 6,
                 'image' => 'jordan-12-retro-flu-game.jpg',
@@ -58,7 +58,7 @@ class AppFixtures extends Fixture
         $clothingProducts = [
             [
                 'name' => 'Jordan Jumpman Fleece Hoodie',
-                'model' => 'DD8955-010',
+                'model' => 'azerty6',
                 'price' => 85.00,
                 'quantity' => 20,
                 'image' => 'jordan-jumpman-fleece-hoodie-black.jpg',
@@ -66,7 +66,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Jordan Flight Heritage Jacket',
-                'model' => 'DD8956-010',
+                'model' => 'azerty7',
                 'price' => 120.00,
                 'quantity' => 15,
                 'image' => 'jordan-flight-heritage-jacket-red.jpg',
@@ -74,7 +74,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Jordan Jumpman Pro Shorts',
-                'model' => 'DD8957-010',
+                'model' => 'azerty8',
                 'price' => 45.00,
                 'quantity' => 25,
                 'image' => 'jordan-jumpman-pro-shorts-black.jpg',
@@ -82,7 +82,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Jordan Flight Legend T-Shirt',
-                'model' => 'DD8958-010',
+                'model' => 'azerty9',
                 'price' => 35.00,
                 'quantity' => 30,
                 'image' => 'jordan-flight-legend-tshirt-white.jpg',
@@ -90,7 +90,7 @@ class AppFixtures extends Fixture
             ],
             [
                 'name' => 'Jordan Jumpman Fleece Pants',
-                'model' => 'DD8959-010',
+                'model' => 'azerty10',
                 'price' => 75.00,
                 'quantity' => 18,
                 'image' => 'jordan-jumpman-fleece-pants-grey.jpg',
