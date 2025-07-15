@@ -10,7 +10,7 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        // Produits Jordan - Baskets
+       
         $basketProducts = [
             [
                 'name' => 'Air Jordan 1 Retro High OG',
@@ -54,7 +54,7 @@ class AppFixtures extends Fixture
             ]
         ];
 
-        // Produits Jordan - Vêtements
+      
         $clothingProducts = [
             [
                 'name' => 'Jordan Jumpman Fleece Hoodie',
@@ -98,7 +98,7 @@ class AppFixtures extends Fixture
             ]
         ];
 
-        // Créer tous les produits
+        
         $allProducts = array_merge($basketProducts, $clothingProducts);
 
         foreach ($allProducts as $productData) {
