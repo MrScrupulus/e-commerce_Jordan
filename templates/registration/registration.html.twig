@@ -23,6 +23,12 @@
                     {{ form_errors(registrationForm.plainPassword) }}
                 </div>
 
+                <div class="form-group">
+                    {{ form_label(registrationForm.confirmPassword, 'Confirmer le mot de passe', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_widget(registrationForm.confirmPassword, {'attr': {'class': 'form-control', 'placeholder': 'Confirmez votre mot de passe'}}) }}
+                    {{ form_errors(registrationForm.confirmPassword) }}
+                </div>
+
                 <div class="form-check">
                     {{ form_widget(registrationForm.agreeTerms, {'attr': {'class': 'form-check-input'}}) }}
                     {{ form_label(registrationForm.agreeTerms, 'J\'accepte les termes et conditions', {'label_attr': {'class': 'form-check-label'}}) }}
@@ -36,4 +42,33 @@
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const passwordField = document.querySelector('#registration_form_plainPassword');
+    const confirmPasswordField = document.querySelector('#registration_form_confirmPassword');
+    const form = document.querySelector('form');
+
+    function validatePasswords() {
+        const password = passwordField.value;
+        const confirmPassword = confirmPasswordField.value;
+        
+        if (confirmPassword && password !== confirmPassword) {
+            confirmPasswordField.setCustomValidity('Les mots de passe ne correspondent pas');
+        } else {
+            confirmPasswordField.setCustomValidity('');
+        }
+    }
+
+    passwordField.addEventListener('input', validatePasswords);
+    confirmPasswordField.addEventListener('input', validatePasswords);
+
+    form.addEventListener('submit', function(e) {
+        validatePasswords();
+        if (!form.checkValidity()) {
+            e.preventDefault();
+        }
+    });
+});
+</script>
 {% endblock %}
